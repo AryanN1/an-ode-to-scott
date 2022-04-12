@@ -1,0 +1,202 @@
+/* Reset Style */
+html,body, h1, h2, h3, h4, p, a{
+  margin: 0.5;
+  padding:0;
+  
+}
+
+/* Main Style */
+body{
+  font-family: 'Montserrat', sans-serif; 
+  background:#f0f7f9;
+  letter-spacing:0.8px;
+  font-size:17px;
+  line-height:2;
+}
+h1{
+  margin-bottom:35px;
+  font-size:50px;
+}
+h2{
+  margin-bottom:30px;
+  font-size:30px;
+}
+h3{
+  margin-bottom: 25px;
+  font-size:25px;
+}
+
+.tagline h1, h2.section-title, span.greyed-text, #footer small{
+  font-family: 'Gamja Flower', cursive;
+}
+h2.section-title:after{
+  content: '';
+    position: relative;
+    height: 2px;
+    width: 40px;
+    background: currentColor;
+    top: 10px;
+    display: block;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.page{
+  padding-top: 150px;
+  padding-bottom:150px;
+}
+.btn-main{
+    color: #fff;
+    background-color: rgb(19, 35, 49);
+    border-radius: 0;
+  transition:all 0.5s;
+}
+.btn-main:hover{
+  background:rgb(47, 78, 105);
+  color:#fff;
+  border-radius:5px;
+  font-size: 14.5px;
+}
+
+/* Home Section Style */
+#home{
+  position:relative;
+  height:100vh;
+  background:linear-gradient(to bottom, rgba(22, 59, 127, 0.75), #f0f7f9);
+  background:url(https://www.picsofcelebrities.com/celebrity/kid-cudi/pictures/large/kid-cudi-movies.jpeg);
+  background-size:cover;
+  background-attachment:fixed;
+  
+}
+#home:before{
+  content:'';
+  background:rgba(0, 0, 0, 0.56);
+  position:absolute;
+  top:0;
+  right:0;
+  left:0;
+  bottom:0;
+}
+#home .tagline{
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%);
+  margin-right:-50%;
+  border:10px solid;
+  padding:20px;
+  color:#fff;
+
+}
+.tagline h2{
+  font-size:25px;
+}
+.tagline span{
+  color:grey;
+}
+
+/* About Section Style */
+/* #about{} */
+#about img{
+  height:400px;
+  margin:10px auto 20px auto;  
+}
+
+
+/* Timeline Section Style */
+ul.achievements{
+  list-style-type:none;
+}
+ul.achievements li{
+  margin: 20px 30px;
+  box-shadow: 0px 1px 5px ;
+  padding:5px 20px;
+}
+ul.achievements li:nth-child(odd){
+  
+  border-left: 10px solid #cdcdcd;
+}
+ul.achievements li:nth-child(even){
+  
+  border-right: 10px solid #334f9a;
+}
+ul.achievements li span{
+  display:block;
+  text-align:right;
+  font-size: 13px;
+  font-style:italic;
+}
+
+/* Quote Section Style */
+#quote{
+  height:100vh;
+  position:relative;
+  background: url(http://images2.fanpop.com/images/photos/7900000/KiD-CuDi-Wallpaper-kid-cudi-7979013-1400-900.jpg);
+  background-size:cover;
+  background-attachment:fixed;
+}
+#quote:before{
+  content:'';
+      background:linear-gradient(to bottom right, rgba(28, 30, 128, 0.82), rgba(255, 255, 255, 0.38));
+  position:absolute;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+}
+#quote blockquote{
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%, -50%);
+  /* margin-right:-50%; */
+  
+}
+#quote blockquote h3{
+  font-family: 'Gugi', cursive;
+  font-size:30px;
+  color: #fff;
+  line-height:1.7;
+}
+
+
+/* Footer Section Style */
+ul.social{
+  list-style-type: none;
+}
+ul.social li{
+  display:inline-block;
+  margin-right: 10px;
+}
+ul.social li i.fa{
+  font-size: 15px;
+  border:2px solid;
+  padding:10px;
+  border-radius:50%;
+  transition: all 0.5s;
+}
+ul.social li i.fa:hover{
+  transform:scale(1.3);
+  background:#fff;
+  border:transparent;
+}
+
+#footer{
+  padding: 100px 0;
+  background: linear-gradient(to top, rgba(22, 59, 127, 0.75), #f0f7f9);
+  
+}
+
+#footer .author{
+  margin-top:50px;
+}
+#footer .author:before{
+  content:'';
+  display:block;
+  height:2px;
+  width:250px;
+  top:-15px;
+  left:50%;
+  transform:translateX(-50%);
+  position:relative;
+  background:#fff;
+}
